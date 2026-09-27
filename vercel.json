@@ -1,0 +1,17 @@
+{
+  "framework": "vite",
+  "functions": {
+    "api/scan-repo.js": {
+      "maxDuration": 60
+    },
+    "api/repo-scans/[id].js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
